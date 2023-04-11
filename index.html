@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake_Run - LeoAce</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="form-select">
+    <div class="box-select">
+      <div class="snake_color">
+        <span>
+          <i class="fa-solid fa-chevron-left arrow_left"></i>
+        </span>
+        <span class="khoi" style="--i: 1"></span>
+        <span class="khoi" style="--i: 2"></span>
+        <span class="khoi" style="--i: 3"></span>
+        <span class="khoi" style="--i: 4"></span>
+        <span class="khoi" style="--i: 5"></span>
+        <span>
+          <i class="fa-solid fa-chevron-right arrow_right"></i>
+        </span>
+      </div>
+      <div class="speed">
+        <!-- <span><b>Speed: </b></span> -->
+        <div>
+          <button type="button" id="Very-Slow" value="7">Very Slow</button>
+          <button type="button" id="Slow" value="6">Slow</button>
+          <button type="button" id="Medium" class="active" value="4">Medium</button>
+          <button type="button" id="Fast" value="1">Fast</button>
+          <button type="button" id="Very-Fast" value="0">Very Fast</button>
+        </div>
+      </div>
+      <div class="play-game">
+        <button type="button" id="btnStart" class="btnStart">PLAY</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="box_games">
+    <div class="game">
+      <div class="spoint" id="spoint">0</div>
+      <div class="back">
+        <i class="fa-solid fa-left-long"></i>
+      </div>
+      <div class="form-message">
+        <div class="spoint">Điểm của bạn: <b>0</b></div>
+        <div class="spoint-max">Cao nhất: <b></b></div>
+        <div>
+          <button type="button" class="back" id="back">
+            <i class="fa-solid fa-left-long"></i>
+          </button>
+          <button type="button" class="btnStart" id="play-again">
+            <i class="fa-solid fa-rotate-left"></i>
+          </button>
+        </div>
+      </div>
+      
+      <canvas id="mycanvas" width="1000px" height="500px" style="border: 3px solid black; background-color: rgb(0, 0, 0);"></canvas>
+    </div>
+  </div>
+  
+  <script src="./js/script.js"></script>
+</body>
+</html>
